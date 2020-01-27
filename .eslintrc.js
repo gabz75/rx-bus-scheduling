@@ -28,4 +28,12 @@ module.exports = {
       "react/jsx-filename-extension": 0,
       "max-len": [1, 120],
     },
+    "overrides": [
+      {
+        "files": ["src/*/style.js"],
+        "rules": {
+          "import/prefer-default-export": 0
+        }
+      }
+    ],
 };
