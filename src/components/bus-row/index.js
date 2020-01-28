@@ -13,7 +13,7 @@ function BusRow({
   const handleOnClick = () => onClick(bus);
 
   return (
-    <Wrapper clickable={clickable} onClick={handleOnClick}>
+    <Wrapper data-testid="bus-row" clickable={clickable} onClick={handleOnClick}>
       {children}
     </Wrapper>
   );

@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="sc-AykKC gFqVvT"
+      data-testid="bus-row"
+    >
+      <button
+        class="sc-AykKD iocDXV"
+        data-testid="button-trip"
+        style="left: 30px; width: 120px;"
+        type="button"
+      >
+        1
+      </button>
+    </div>
+    <div
+      class="sc-AykKC gFqVvT"
+      data-testid="bus-row"
+    >
+      <button
+        class="sc-AykKD iocDXV"
+        data-testid="button-trip"
+        style="left: 180px; width: 120px;"
+        type="button"
+      >
+        2
+      </button>
+    </div>
+    <div
+      class="sc-AykKC gFqVvT"
+      data-testid="bus-row"
+    >
+      <button
+        class="sc-AykKD iocDXV"
+        data-testid="button-trip"
+        style="left: 330px; width: 120px;"
+        type="button"
+      >
+        3
+      </button>
+    </div>
+    <div
+      class="sc-AykKC gFqVvT"
+      data-testid="bus-row"
+    >
+      <button
+        class="sc-AykKD iocDXV"
+        data-testid="button-trip"
+        style="left: 40px; width: 90px;"
+        type="button"
+      >
+        4
+      </button>
+    </div>
+    <div
+      class="sc-AykKC gFqVvT"
+      data-testid="bus-row"
+    >
+      <button
+        class="sc-AykKD iocDXV"
+        data-testid="button-trip"
+        style="left: 160px; width: 90px;"
+        type="button"
+      >
+        5
+      </button>
+    </div>
+    <div
+      class="sc-AykKC gFqVvT"
+      data-testid="bus-row"
+    >
+      <button
+        class="sc-AykKD iocDXV"
+        data-testid="button-trip"
+        style="left: 280px; width: 90px;"
+        type="button"
+      >
+        6
+      </button>
+    </div>
+    <div
+      class="sc-AykKC gFqVvT"
+      data-testid="bus-row"
+    >
+      <button
+        class="sc-AykKD iocDXV"
+        data-testid="button-trip"
+        style="left: 400px; width: 90px;"
+        type="button"
+      >
+        7
+      </button>
+    </div>
+    <div
+      class="sc-AykKC gFqVvT"
+      data-testid="bus-row"
+    >
+      <button
+        class="sc-AykKD iocDXV"
+        data-testid="button-trip"
+        style="left: 80px; width: 160px;"
+        type="button"
+      >
+        8
+      </button>
+    </div>
+    <div
+      class="sc-AykKC gFqVvT"
+      data-testid="bus-row"
+    >
+      <button
+        class="sc-AykKD iocDXV"
+        data-testid="button-trip"
+        style="left: 280px; width: 150px;"
+        type="button"
+      >
+        9
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

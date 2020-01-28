@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-AykKC jkPcuc"
+    data-testid="button-trip"
+    style="left: 80px; width: 160px;"
+    type="button"
+  >
+    1
+  </button>
+</DocumentFragment>
+`;
+
+exports[`renders with selected 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-AykKC hVFWap"
+    data-testid="button-trip"
+    style="left: 80px; width: 160px;"
+    type="button"
+  >
+    1
+  </button>
+</DocumentFragment>
+`;

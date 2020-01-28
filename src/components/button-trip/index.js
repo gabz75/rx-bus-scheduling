@@ -16,6 +16,7 @@ function ButtonTrip({
 
   return (
     <StyledButtonTrip
+      data-testid="button-trip"
       style={{ left, width }}
       selected={selected}
       type="button"
