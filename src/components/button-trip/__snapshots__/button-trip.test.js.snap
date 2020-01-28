@@ -3,7 +3,7 @@
 exports[`renders 1`] = `
 <DocumentFragment>
   <button
-    class="sc-AykKC jkPcuc"
+    class="sc-AykKC khlhBb"
     data-testid="button-trip"
     style="left: 80px; width: 160px;"
     type="button"
@@ -16,7 +16,7 @@ exports[`renders 1`] = `
 exports[`renders with selected 1`] = `
 <DocumentFragment>
   <button
-    class="sc-AykKC hVFWap"
+    class="sc-AykKC buJhwc"
     data-testid="button-trip"
     style="left: 80px; width: 160px;"
     type="button"
