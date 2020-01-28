@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+export const MARGIN_LEFT = 220;
+
 export const Wrapper = styled.div`
 `;
 
@@ -8,8 +10,10 @@ export const Header = styled.div`
   border-bottom: 1px solid #dedede;
   height: 1rem;
   padding: 0.5rem 0;
+
   & > span {
     position: absolute;
+    padding-left: ${MARGIN_LEFT}px;
     font-size: 11px;
   }
 `;

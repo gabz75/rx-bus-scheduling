@@ -11,7 +11,13 @@ import {
   deleteTripFromBus,
 } from './reducer';
 
-import { Wrapper, Header, Body } from './style';
+import {
+  Wrapper,
+  Header,
+  Body,
+  BusHeader,
+  BusBody,
+} from './style';
 
 function BusSchedulingWidget({ trips }) {
   // create an array of buses and assign each trip to its own bus.

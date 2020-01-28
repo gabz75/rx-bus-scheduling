@@ -1,7 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Wrapper } from './style';
+import {
+  Wrapper,
+  Header,
+  BusName,
+  BusTimeFrame,
+  Body,
+} from './style';
+
+import { getTimeFrameLabel } from './helpers';
 
 function BusRow({
   children,
@@ -9,12 +17,20 @@ function BusRow({
   clickable,
   onClick,
 }) {
+  const busName = (bus && `Bus ${bus.id}`) || 'New bus';
+  const timeFrame = getTimeFrameLabel(bus);
   // handlers
   const handleOnClick = () => onClick(bus);
 
   return (
     <Wrapper data-testid="bus-row" clickable={clickable} onClick={handleOnClick}>
-      {children}
+      <Header>
+        <BusName>{busName}</BusName>
+        <BusTimeFrame>{timeFrame}</BusTimeFrame>
+      </Header>
+      <Body>
+        {children}
+      </Body>
     </Wrapper>
   );
 }

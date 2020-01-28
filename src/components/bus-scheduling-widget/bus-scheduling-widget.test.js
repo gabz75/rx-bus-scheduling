@@ -45,7 +45,6 @@ it('creates a new row when selecting a trip', () => {
   getAllByTestId('button-trip')[0].click();
 
   expect(getAllByTestId('bus-row')).toHaveLength(10);
-  expect(getAllByTestId('bus-row')[9]).toBeEmpty(); // empty new row the the new bus
 });
 
 it('prevents from moving trip that overlaps', () => {
