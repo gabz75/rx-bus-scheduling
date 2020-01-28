@@ -1,18 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { StyledButtonTrip } from './style';
 
-function ButtonTrip({ trip, onClick, selected }) {
+function ButtonTrip({
+  bus,
+  trip,
+  onClick,
+  selected,
+}) {
   const width = `${trip.endTime - trip.startTime}px`;
-  const marginLeft = `${trip.startTime}px`;
+  const left = `${trip.startTime}px`;
 
   // handlers
-  const handleOnClick = () => onClick(trip);
+  const handleOnClick = () => onClick(bus, trip);
 
   return (
     <StyledButtonTrip
-      style={{ marginLeft, width }}
+      style={{ left, width }}
       selected={selected}
       type="button"
       onClick={handleOnClick}
@@ -23,6 +27,10 @@ function ButtonTrip({ trip, onClick, selected }) {
 }
 
 ButtonTrip.propTypes = {
+  bus: PropTypes.shape({
+    id: PropTypes.number,
+    trips: PropTypes.array,
+  }).isRequired,
   trip: PropTypes.shape({
     id: PropTypes.number,
     endTime: PropTypes.number,
