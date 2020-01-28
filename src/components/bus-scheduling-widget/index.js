@@ -15,9 +15,11 @@ import {
   Wrapper,
   Header,
   Body,
-  BusHeader,
-  BusBody,
 } from './style';
+
+import { isSameTrip, rangeOverlap } from './helpers';
+
+const TICKS = [0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12];
 
 function BusSchedulingWidget({ trips }) {
   // create an array of buses and assign each trip to its own bus.
@@ -26,16 +28,6 @@ function BusSchedulingWidget({ trips }) {
 
     return bus;
   });
-
-  // helpers
-  const isSameTrip = (tripA, tripB) => tripA && tripB && tripA.id === tripB.id;
-  const rangeOverlap = (rangeA, rangeB) => (
-    (rangeA.endTime >= rangeB.startTime && rangeA.endTime <= rangeB.endTime)
-    || (rangeA.startTime <= rangeB.endTime && rangeA.startTime >= rangeB.startTime)
-    || (rangeA.startTime >= rangeB.startTime && rangeA.endTime <= rangeB.endTime)
-    || (rangeA.startTime >= rangeB.startTime && rangeA.endTime <= rangeB.endTime)
-    || (rangeB.startTime >= rangeA.startTime && rangeB.endTime <= rangeA.endTime)
-  );
 
   // hooks
   const [buses, dispatch] = useReducer(busReducer, intialStateBuses);
@@ -81,16 +73,10 @@ function BusSchedulingWidget({ trips }) {
   return (
     <Wrapper>
       <Header>
-        { /* this would be better if it was dynamic */ }
-        <span style={{ left: '0px' }}>0:00</span>
-        <span style={{ left: '60px' }}>1:00</span>
-        <span style={{ left: '120px' }}>2:00</span>
-        <span style={{ left: '180px' }}>3:00</span>
-        <span style={{ left: '240px' }}>4:00</span>
-        <span style={{ left: '300px' }}>5:00</span>
-        <span style={{ left: '360px' }}>6:00</span>
-        <span style={{ left: '420px' }}>7:00</span>
-        <span style={{ left: '480px' }}>9:00</span>
+        {
+          // eslint-disable-next-line react/jsx-one-expression-per-line
+          TICKS.map((i) => (<span key={i} style={{ left: `${i * 60}px` }}>{i}:00</span>))
+        }
       </Header>
       <Body>
         {

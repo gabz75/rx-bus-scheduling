@@ -34,11 +34,6 @@ exports[`renders 1`] = `
         4:00
       </span>
       <span
-        style="left: 300px;"
-      >
-        5:00
-      </span>
-      <span
         style="left: 360px;"
       >
         6:00
@@ -51,7 +46,27 @@ exports[`renders 1`] = `
       <span
         style="left: 480px;"
       >
+        8:00
+      </span>
+      <span
+        style="left: 540px;"
+      >
         9:00
+      </span>
+      <span
+        style="left: 600px;"
+      >
+        10:00
+      </span>
+      <span
+        style="left: 660px;"
+      >
+        11:00
+      </span>
+      <span
+        style="left: 720px;"
+      >
+        12:00
       </span>
     </div>
     <div
