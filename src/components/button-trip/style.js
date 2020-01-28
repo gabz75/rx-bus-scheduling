@@ -6,5 +6,5 @@ export const StyledButtonTrip = styled.button`
   height: 1.5rem;
   cursor: pointer;
 
-  background-color: ${(props) => props.selected && '#015baa'}
+  background-color: ${(props) => props.selected && '#015baa'};
 `;

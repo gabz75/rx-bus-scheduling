@@ -6,5 +6,5 @@ export const Wrapper = styled.div`
   position: relative;
   height: 1.5rem;
 
-  cursor: ${(props) => props.clickable && 'pointer'}
+  cursor: ${(props) => props.clickable && 'pointer'};
 `;

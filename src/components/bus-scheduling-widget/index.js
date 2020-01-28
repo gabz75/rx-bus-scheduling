@@ -11,6 +11,8 @@ import {
   deleteTripFromBus,
 } from './reducer';
 
+import { Wrapper } from './style';
+
 function BusSchedulingWidget({ trips }) {
   // create an array of buses and assign each trip to its own bus.
   const intialStateBuses = trips.map((trip) => {
@@ -71,10 +73,15 @@ function BusSchedulingWidget({ trips }) {
   };
 
   return (
-    <div>
+    <Wrapper>
       {
         buses.map((bus) => bus.trips.length > 0 && (
-          <BusRow key={bus.id} bus={bus} clickable={!!selectedTrip} onClick={handleMoveTrip}>
+          <BusRow
+            key={bus.id}
+            bus={bus}
+            clickable={!!selectedTrip}
+            onClick={handleMoveTrip}
+          >
             {
               bus.trips.map((trip) => (
                 <ButtonTrip
@@ -94,7 +101,7 @@ function BusSchedulingWidget({ trips }) {
           <BusRow clickable onClick={handleAddBus} />
         )
       }
-    </div>
+    </Wrapper>
   );
 }
 
