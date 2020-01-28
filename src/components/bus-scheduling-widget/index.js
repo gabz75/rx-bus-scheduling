@@ -11,7 +11,7 @@ import {
   deleteTripFromBus,
 } from './reducer';
 
-import { Wrapper } from './style';
+import { Wrapper, Header, Body } from './style';
 
 function BusSchedulingWidget({ trips }) {
   // create an array of buses and assign each trip to its own bus.
@@ -74,33 +74,47 @@ function BusSchedulingWidget({ trips }) {
 
   return (
     <Wrapper>
-      {
-        buses.map((bus) => bus.trips.length > 0 && (
-          <BusRow
-            key={bus.id}
-            bus={bus}
-            clickable={!!selectedTrip}
-            onClick={handleMoveTrip}
-          >
-            {
-              bus.trips.map((trip) => (
-                <ButtonTrip
-                  key={trip.id}
-                  trip={trip}
-                  bus={bus}
-                  selected={isSameTrip(selectedTrip, trip)}
-                  onClick={handleSelectTrip}
-                />
-              ))
-            }
-          </BusRow>
-        ))
-      }
-      {
-        !!selectedTrip && (
-          <BusRow clickable onClick={handleAddBus} />
-        )
-      }
+      <Header>
+        { /* this would be better if it was dynamic */ }
+        <span style={{ left: '0px' }}>0:00</span>
+        <span style={{ left: '60px' }}>1:00</span>
+        <span style={{ left: '120px' }}>2:00</span>
+        <span style={{ left: '180px' }}>3:00</span>
+        <span style={{ left: '240px' }}>4:00</span>
+        <span style={{ left: '300px' }}>5:00</span>
+        <span style={{ left: '360px' }}>6:00</span>
+        <span style={{ left: '420px' }}>7:00</span>
+        <span style={{ left: '480px' }}>9:00</span>
+      </Header>
+      <Body>
+        {
+          buses.map((bus) => bus.trips.length > 0 && (
+            <BusRow
+              key={bus.id}
+              bus={bus}
+              clickable={!!selectedTrip}
+              onClick={handleMoveTrip}
+            >
+              {
+                bus.trips.map((trip) => (
+                  <ButtonTrip
+                    key={trip.id}
+                    trip={trip}
+                    bus={bus}
+                    selected={isSameTrip(selectedTrip, trip)}
+                    onClick={handleSelectTrip}
+                  />
+                ))
+              }
+            </BusRow>
+          ))
+        }
+        {
+          !!selectedTrip && (
+            <BusRow clickable onClick={handleAddBus} />
+          )
+        }
+      </Body>
     </Wrapper>
   );
 }

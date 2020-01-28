@@ -2,123 +2,178 @@
 
 exports[`renders 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="sc-AykKE jZChVS"
+  >
     <div
-      class="sc-AykKC gFqVvT"
-      data-testid="bus-row"
+      class="sc-AykKF ljrprT"
     >
-      <button
-        class="sc-AykKD iocDXV"
-        data-testid="button-trip"
-        style="left: 30px; width: 120px;"
-        type="button"
+      <span
+        style="left: 0px;"
       >
-        1
-      </button>
+        0:00
+      </span>
+      <span
+        style="left: 60px;"
+      >
+        1:00
+      </span>
+      <span
+        style="left: 120px;"
+      >
+        2:00
+      </span>
+      <span
+        style="left: 180px;"
+      >
+        3:00
+      </span>
+      <span
+        style="left: 240px;"
+      >
+        4:00
+      </span>
+      <span
+        style="left: 300px;"
+      >
+        5:00
+      </span>
+      <span
+        style="left: 360px;"
+      >
+        6:00
+      </span>
+      <span
+        style="left: 420px;"
+      >
+        7:00
+      </span>
+      <span
+        style="left: 480px;"
+      >
+        9:00
+      </span>
     </div>
     <div
-      class="sc-AykKC gFqVvT"
-      data-testid="bus-row"
+      class="sc-AykKG bhca-DG"
     >
-      <button
-        class="sc-AykKD iocDXV"
-        data-testid="button-trip"
-        style="left: 180px; width: 120px;"
-        type="button"
+      <div
+        class="sc-AykKC dmQAbO"
+        data-testid="bus-row"
       >
-        2
-      </button>
-    </div>
-    <div
-      class="sc-AykKC gFqVvT"
-      data-testid="bus-row"
-    >
-      <button
-        class="sc-AykKD iocDXV"
-        data-testid="button-trip"
-        style="left: 330px; width: 120px;"
-        type="button"
+        <button
+          class="sc-AykKD bPHaww"
+          data-testid="button-trip"
+          style="left: 30px; width: 120px;"
+          type="button"
+        >
+          1
+        </button>
+      </div>
+      <div
+        class="sc-AykKC dmQAbO"
+        data-testid="bus-row"
       >
-        3
-      </button>
-    </div>
-    <div
-      class="sc-AykKC gFqVvT"
-      data-testid="bus-row"
-    >
-      <button
-        class="sc-AykKD iocDXV"
-        data-testid="button-trip"
-        style="left: 40px; width: 90px;"
-        type="button"
+        <button
+          class="sc-AykKD bPHaww"
+          data-testid="button-trip"
+          style="left: 180px; width: 120px;"
+          type="button"
+        >
+          2
+        </button>
+      </div>
+      <div
+        class="sc-AykKC dmQAbO"
+        data-testid="bus-row"
       >
-        4
-      </button>
-    </div>
-    <div
-      class="sc-AykKC gFqVvT"
-      data-testid="bus-row"
-    >
-      <button
-        class="sc-AykKD iocDXV"
-        data-testid="button-trip"
-        style="left: 160px; width: 90px;"
-        type="button"
+        <button
+          class="sc-AykKD bPHaww"
+          data-testid="button-trip"
+          style="left: 330px; width: 120px;"
+          type="button"
+        >
+          3
+        </button>
+      </div>
+      <div
+        class="sc-AykKC dmQAbO"
+        data-testid="bus-row"
       >
-        5
-      </button>
-    </div>
-    <div
-      class="sc-AykKC gFqVvT"
-      data-testid="bus-row"
-    >
-      <button
-        class="sc-AykKD iocDXV"
-        data-testid="button-trip"
-        style="left: 280px; width: 90px;"
-        type="button"
+        <button
+          class="sc-AykKD bPHaww"
+          data-testid="button-trip"
+          style="left: 40px; width: 90px;"
+          type="button"
+        >
+          4
+        </button>
+      </div>
+      <div
+        class="sc-AykKC dmQAbO"
+        data-testid="bus-row"
       >
-        6
-      </button>
-    </div>
-    <div
-      class="sc-AykKC gFqVvT"
-      data-testid="bus-row"
-    >
-      <button
-        class="sc-AykKD iocDXV"
-        data-testid="button-trip"
-        style="left: 400px; width: 90px;"
-        type="button"
+        <button
+          class="sc-AykKD bPHaww"
+          data-testid="button-trip"
+          style="left: 160px; width: 90px;"
+          type="button"
+        >
+          5
+        </button>
+      </div>
+      <div
+        class="sc-AykKC dmQAbO"
+        data-testid="bus-row"
       >
-        7
-      </button>
-    </div>
-    <div
-      class="sc-AykKC gFqVvT"
-      data-testid="bus-row"
-    >
-      <button
-        class="sc-AykKD iocDXV"
-        data-testid="button-trip"
-        style="left: 80px; width: 160px;"
-        type="button"
+        <button
+          class="sc-AykKD bPHaww"
+          data-testid="button-trip"
+          style="left: 280px; width: 90px;"
+          type="button"
+        >
+          6
+        </button>
+      </div>
+      <div
+        class="sc-AykKC dmQAbO"
+        data-testid="bus-row"
       >
-        8
-      </button>
-    </div>
-    <div
-      class="sc-AykKC gFqVvT"
-      data-testid="bus-row"
-    >
-      <button
-        class="sc-AykKD iocDXV"
-        data-testid="button-trip"
-        style="left: 280px; width: 150px;"
-        type="button"
+        <button
+          class="sc-AykKD bPHaww"
+          data-testid="button-trip"
+          style="left: 400px; width: 90px;"
+          type="button"
+        >
+          7
+        </button>
+      </div>
+      <div
+        class="sc-AykKC dmQAbO"
+        data-testid="bus-row"
       >
-        9
-      </button>
+        <button
+          class="sc-AykKD bPHaww"
+          data-testid="button-trip"
+          style="left: 80px; width: 160px;"
+          type="button"
+        >
+          8
+        </button>
+      </div>
+      <div
+        class="sc-AykKC dmQAbO"
+        data-testid="bus-row"
+      >
+        <button
+          class="sc-AykKD bPHaww"
+          data-testid="button-trip"
+          style="left: 280px; width: 150px;"
+          type="button"
+        >
+          9
+        </button>
+      </div>
     </div>
   </div>
 </DocumentFragment>
