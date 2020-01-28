@@ -24,6 +24,7 @@ module.exports = {
       "src/serviceWorker.js",
     ],
     "rules": {
+      "import/prefer-default-export": 0,
       "react/jsx-props-no-spreading": 0,
       "react/jsx-filename-extension": 0,
       "max-len": [1, 120],

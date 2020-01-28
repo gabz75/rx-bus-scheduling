@@ -1,0 +1,357 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AykKC dkougU"
+  >
+    <div
+      class="sc-AykKD EDSZQ"
+    >
+      <span
+        style="left: 0px;"
+      >
+        0:00
+      </span>
+      <span
+        style="left: 60px;"
+      >
+        1:00
+      </span>
+      <span
+        style="left: 120px;"
+      >
+        2:00
+      </span>
+      <span
+        style="left: 180px;"
+      >
+        3:00
+      </span>
+      <span
+        style="left: 240px;"
+      >
+        4:00
+      </span>
+      <span
+        style="left: 360px;"
+      >
+        6:00
+      </span>
+      <span
+        style="left: 420px;"
+      >
+        7:00
+      </span>
+      <span
+        style="left: 480px;"
+      >
+        8:00
+      </span>
+      <span
+        style="left: 540px;"
+      >
+        9:00
+      </span>
+      <span
+        style="left: 600px;"
+      >
+        10:00
+      </span>
+      <span
+        style="left: 660px;"
+      >
+        11:00
+      </span>
+      <span
+        style="left: 720px;"
+      >
+        12:00
+      </span>
+    </div>
+    <div
+      class="sc-AykKE lhTZSI"
+    >
+      <div
+        class="sc-AykKF gEfNRb"
+        data-testid="bus-row"
+      >
+        <div
+          class="sc-AykKG ienIoM"
+        >
+          <div
+            class="sc-AykKI kmksPO"
+          >
+            Bus 1
+          </div>
+          <div
+            class="sc-AykKJ ekKpKp"
+          >
+            0:30 - 2:30
+          </div>
+        </div>
+        <div
+          class="sc-AykKH hbYkQQ"
+        >
+          <button
+            class="sc-AykKK llehJP"
+            data-testid="button-trip"
+            style="left: 30px; width: 120px;"
+            type="button"
+          >
+            1
+          </button>
+        </div>
+      </div>
+      <div
+        class="sc-AykKF gEfNRb"
+        data-testid="bus-row"
+      >
+        <div
+          class="sc-AykKG ienIoM"
+        >
+          <div
+            class="sc-AykKI kmksPO"
+          >
+            Bus 2
+          </div>
+          <div
+            class="sc-AykKJ ekKpKp"
+          >
+            3:00 - 5:00
+          </div>
+        </div>
+        <div
+          class="sc-AykKH hbYkQQ"
+        >
+          <button
+            class="sc-AykKK llehJP"
+            data-testid="button-trip"
+            style="left: 180px; width: 120px;"
+            type="button"
+          >
+            2
+          </button>
+        </div>
+      </div>
+      <div
+        class="sc-AykKF gEfNRb"
+        data-testid="bus-row"
+      >
+        <div
+          class="sc-AykKG ienIoM"
+        >
+          <div
+            class="sc-AykKI kmksPO"
+          >
+            Bus 3
+          </div>
+          <div
+            class="sc-AykKJ ekKpKp"
+          >
+            5:30 - 7:30
+          </div>
+        </div>
+        <div
+          class="sc-AykKH hbYkQQ"
+        >
+          <button
+            class="sc-AykKK llehJP"
+            data-testid="button-trip"
+            style="left: 330px; width: 120px;"
+            type="button"
+          >
+            3
+          </button>
+        </div>
+      </div>
+      <div
+        class="sc-AykKF gEfNRb"
+        data-testid="bus-row"
+      >
+        <div
+          class="sc-AykKG ienIoM"
+        >
+          <div
+            class="sc-AykKI kmksPO"
+          >
+            Bus 4
+          </div>
+          <div
+            class="sc-AykKJ ekKpKp"
+          >
+            0:40 - 2:10
+          </div>
+        </div>
+        <div
+          class="sc-AykKH hbYkQQ"
+        >
+          <button
+            class="sc-AykKK llehJP"
+            data-testid="button-trip"
+            style="left: 40px; width: 90px;"
+            type="button"
+          >
+            4
+          </button>
+        </div>
+      </div>
+      <div
+        class="sc-AykKF gEfNRb"
+        data-testid="bus-row"
+      >
+        <div
+          class="sc-AykKG ienIoM"
+        >
+          <div
+            class="sc-AykKI kmksPO"
+          >
+            Bus 5
+          </div>
+          <div
+            class="sc-AykKJ ekKpKp"
+          >
+            2:40 - 4:10
+          </div>
+        </div>
+        <div
+          class="sc-AykKH hbYkQQ"
+        >
+          <button
+            class="sc-AykKK llehJP"
+            data-testid="button-trip"
+            style="left: 160px; width: 90px;"
+            type="button"
+          >
+            5
+          </button>
+        </div>
+      </div>
+      <div
+        class="sc-AykKF gEfNRb"
+        data-testid="bus-row"
+      >
+        <div
+          class="sc-AykKG ienIoM"
+        >
+          <div
+            class="sc-AykKI kmksPO"
+          >
+            Bus 6
+          </div>
+          <div
+            class="sc-AykKJ ekKpKp"
+          >
+            4:40 - 6:10
+          </div>
+        </div>
+        <div
+          class="sc-AykKH hbYkQQ"
+        >
+          <button
+            class="sc-AykKK llehJP"
+            data-testid="button-trip"
+            style="left: 280px; width: 90px;"
+            type="button"
+          >
+            6
+          </button>
+        </div>
+      </div>
+      <div
+        class="sc-AykKF gEfNRb"
+        data-testid="bus-row"
+      >
+        <div
+          class="sc-AykKG ienIoM"
+        >
+          <div
+            class="sc-AykKI kmksPO"
+          >
+            Bus 7
+          </div>
+          <div
+            class="sc-AykKJ ekKpKp"
+          >
+            6:40 - 8:10
+          </div>
+        </div>
+        <div
+          class="sc-AykKH hbYkQQ"
+        >
+          <button
+            class="sc-AykKK llehJP"
+            data-testid="button-trip"
+            style="left: 400px; width: 90px;"
+            type="button"
+          >
+            7
+          </button>
+        </div>
+      </div>
+      <div
+        class="sc-AykKF gEfNRb"
+        data-testid="bus-row"
+      >
+        <div
+          class="sc-AykKG ienIoM"
+        >
+          <div
+            class="sc-AykKI kmksPO"
+          >
+            Bus 8
+          </div>
+          <div
+            class="sc-AykKJ ekKpKp"
+          >
+            1:20 - 4:00
+          </div>
+        </div>
+        <div
+          class="sc-AykKH hbYkQQ"
+        >
+          <button
+            class="sc-AykKK llehJP"
+            data-testid="button-trip"
+            style="left: 80px; width: 160px;"
+            type="button"
+          >
+            8
+          </button>
+        </div>
+      </div>
+      <div
+        class="sc-AykKF gEfNRb"
+        data-testid="bus-row"
+      >
+        <div
+          class="sc-AykKG ienIoM"
+        >
+          <div
+            class="sc-AykKI kmksPO"
+          >
+            Bus 9
+          </div>
+          <div
+            class="sc-AykKJ ekKpKp"
+          >
+            4:40 - 7:10
+          </div>
+        </div>
+        <div
+          class="sc-AykKH hbYkQQ"
+        >
+          <button
+            class="sc-AykKK llehJP"
+            data-testid="button-trip"
+            style="left: 280px; width: 150px;"
+            type="button"
+          >
+            9
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AykKF gEfNRb"
+    data-testid="bus-row"
+  >
+    <div
+      class="sc-AykKG ienIoM"
+    >
+      <div
+        class="sc-AykKI kmksPO"
+      >
+        Bus 1
+      </div>
+      <div
+        class="sc-AykKJ ekKpKp"
+      />
+    </div>
+    <div
+      class="sc-AykKH hbYkQQ"
+    />
+  </div>
+</DocumentFragment>
+`;
