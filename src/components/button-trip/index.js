@@ -1,5 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
+import { PropTypesBus } from 'prop-types/bus';
+import { PropTypesTrip } from 'prop-types/trip';
+
 import { StyledButtonTrip } from './style';
 
 function ButtonTrip({
@@ -28,15 +32,8 @@ function ButtonTrip({
 }
 
 ButtonTrip.propTypes = {
-  bus: PropTypes.shape({
-    id: PropTypes.number,
-    trips: PropTypes.array,
-  }).isRequired,
-  trip: PropTypes.shape({
-    id: PropTypes.number,
-    endTime: PropTypes.number,
-    startTime: PropTypes.number,
-  }).isRequired,
+  bus: PropTypesBus.isRequired,
+  trip: PropTypesTrip.isRequired,
   onClick: PropTypes.func,
   selected: PropTypes.bool,
 };

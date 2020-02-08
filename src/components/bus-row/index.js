@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { PropTypesBus } from 'prop-types/bus';
+
 import {
   Wrapper,
   Header,
@@ -36,10 +38,7 @@ function BusRow({
 }
 
 BusRow.propTypes = {
-  bus: PropTypes.shape({
-    id: PropTypes.number,
-    trips: PropTypes.array,
-  }),
+  bus: PropTypesBus,
   children: PropTypes.node,
   onClick: PropTypes.func,
   clickable: PropTypes.bool,

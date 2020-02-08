@@ -1,14 +1,16 @@
-import React, { useState, useReducer } from 'react';
-import PropTypes from 'prop-types';
+import React, { useReducer } from 'react';
 
 import BusRow from 'components/bus-row';
 import ButtonTrip from 'components/button-trip';
+import { PropTypesTrips } from 'prop-types/trip';
 
-import {
+import reducer, {
+  getInitialState,
+  addTrip,
+  deleteTrip,
   addBus,
-  addTripToBus,
-  busReducer,
-  deleteTripFromBus,
+  updateSelectedBus,
+  updateSelectedTrip,
 } from './reducer';
 
 import {
@@ -22,26 +24,22 @@ import { isSameTrip, rangeOverlap } from './helpers';
 const TICKS = [0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12];
 
 function BusSchedulingWidget({ trips }) {
-  // create an array of buses and assign each trip to its own bus.
-  const intialStateBuses = trips.map((trip) => {
-    const bus = { id: trip.id, trips: [trip] };
-
-    return bus;
-  });
-
   // hooks
-  const [buses, dispatch] = useReducer(busReducer, intialStateBuses);
-  const [selectedTrip, setSelectedTrip] = useState();
-  const [selectedBus, setSelectedBus] = useState();
+  const [state, dispatch] = useReducer(reducer, getInitialState(trips));
+  const {
+    selectedTrip,
+    selectedBus,
+    buses,
+  } = state;
 
   // handlers
   const handleSelectTrip = (bus, trip) => {
     if (isSameTrip(trip, selectedTrip)) {
-      setSelectedTrip(null);
-      setSelectedBus(null);
+      dispatch(updateSelectedBus(null));
+      dispatch(updateSelectedTrip(null));
     } else {
-      setSelectedTrip(trip);
-      setSelectedBus(bus);
+      dispatch(updateSelectedBus(bus));
+      dispatch(updateSelectedTrip(trip));
     }
   };
 
@@ -53,9 +51,9 @@ function BusSchedulingWidget({ trips }) {
     const overlappingTrip = bus.trips.find((t) => rangeOverlap(selectedTrip, t));
 
     if (!overlappingTrip) {
-      dispatch(deleteTripFromBus(selectedBus, selectedTrip));
-      dispatch(addTripToBus(bus, selectedTrip));
-      setSelectedTrip(null);
+      dispatch(deleteTrip(selectedBus, selectedTrip));
+      dispatch(addTrip(bus, selectedTrip));
+      dispatch(updateSelectedTrip(null));
     }
   };
 
@@ -64,10 +62,10 @@ function BusSchedulingWidget({ trips }) {
     const bus = { id: lastBuses.id + 1, trips: [] };
 
     dispatch(addBus(bus));
-    dispatch(deleteTripFromBus(selectedBus, selectedTrip));
-    dispatch(addTripToBus(bus, selectedTrip));
-    setSelectedBus(null);
-    setSelectedTrip(null);
+    dispatch(deleteTrip(selectedBus, selectedTrip));
+    dispatch(addTrip(bus, selectedTrip));
+    dispatch(updateSelectedBus(null));
+    dispatch(updateSelectedTrip(null));
   };
 
   return (
@@ -112,11 +110,7 @@ function BusSchedulingWidget({ trips }) {
 }
 
 BusSchedulingWidget.propTypes = {
-  trips: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number,
-    endTime: PropTypes.number,
-    startTime: PropTypes.number,
-  })),
+  trips: PropTypesTrips,
 };
 
 BusSchedulingWidget.defaultProps = {
